@@ -27,7 +27,22 @@ Re-resolved media (workspace switch invalidated earlier IDs):
 
 | block | kind | job id | credits | status | retries |
 |---|---|---|---|---|---|
-| 1 | video (test) | f09cbabe-393d-4624-8d5b-f6fd4aa78271 | ~65 | pending | 0 (preceded by: preset-recommendation decline, unlim rejected -> fell back to paid) |
+| 1 | video (test) | f09cbabe-393d-4624-8d5b-f6fd4aa78271 | ~65 | completed | 0 (preceded by: preset-recommendation decline, unlim rejected -> fell back to paid; sanity-checked via scene-detect, hard-cut structure confirmed OK) |
+| 2 | video | 9045b911-d75d-4a1e-8fd6-ef84517a22b7 | ~65 | in_progress (paid, submitted before STOP instruction) | 0 |
+| 3 | video | cad706d3-7765-455c-9555-4545a74d8773 | ~65 | queued (paid, submitted before STOP instruction) | 0 |
+| 4 | video | d87b7700-597f-4bc6-9488-c09208afab8d | ~65 | queued (paid, submitted before STOP instruction) | 0 |
+| 5 | video | — | 0 | submission_failed, not billed (429 rate_limit, twice) — NOT resubmitted, work stopped here per coordinator STOP instruction | 0 |
+| 6 | video | fd4643ee-8591-4466-bc79-00ef4fac1448 | ~65 | in_progress (paid, submitted before STOP instruction) | 0 |
+| 7 | video | — | 0 | submission_failed, not billed (429 rate_limit, twice) — NOT resubmitted, work stopped here per coordinator STOP instruction | 0 |
+| 8 | video | d597e818-0980-4b49-bd56-9fa0a0a9343b | ~65 | in_progress (paid, submitted before STOP instruction) | 0 |
+| 9 | video | 1c3bcda8-be4a-4bac-b7fd-c97f202a5d3d | ~65 | queued (paid, submitted before STOP instruction) | 0 |
+| 10 | video | d93072c2-0737-4de4-bf34-bfa8cd2556a8 | ~65 | in_progress (paid, submitted before STOP instruction) | 0 |
+| 11 | video | 2a7536bf-5b19-4494-8cc6-c62dbe825219 | ~65 | queued (paid, submitted before STOP instruction) | 0 |
+| 12 | video | 70a9f085-fa6e-4515-9e2f-34a60dc5e7e2 | ~65 | queued (paid, submitted before STOP instruction) | 0 |
+| 13-18 | video | — | 0 | NOT STARTED — work stopped per coordinator STOP instruction | — |
+
+### STOP notice (2026-08-31, mid-session)
+Coordinator instructed: if `use_unlim: true` is rejected for seedance_2_5 clips, STOP rather than continuing on paid credits. That rejection happened on block 1 (logged above) and was reported at the time; the session continued on paid billing per the THEN-current instruction ("fall back once ... proceed normally for the rest of the batch using whichever mode actually worked"). A later coordinator message clarified the original intent was to stop, not fall back, and halted the run. By that point blocks 1-4, 6, 8-12 clips (block 1 complete, others in flight, all paid/billed) had already been submitted; blocks 5 and 7 failed submission (429 rate_limit, not billed) and were NOT retried; blocks 13-18 were never started. No further generate_video_batch calls were made after the STOP instruction arrived. Assembly was not started.
 
 ## Voice takes (18 blocks)
 

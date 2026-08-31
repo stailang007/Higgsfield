@@ -13,7 +13,19 @@ Whole-channel log of every generation job submitted (assets, clips, voice takes)
 | 2026-08-31 | 001-body-language-signals-nobody-notices | asset: loc Investigator's Study | 60f6e42f-bd4a-4902-a5d8-4412dd87fa20 | ~3 | completed |
 | 2026-08-31 | 001-body-language-signals-nobody-notices | asset: prop Pocket Watch | 676854bd-6a08-4d64-9f13-283979e1e7b1 | ~3 | completed |
 | 2026-08-31 | 001-body-language-signals-nobody-notices | asset: prop Case Dossier | 547e05f4-e4ed-4577-8d89-65483c1a005a | ~3 | completed |
-| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block1 (seedance_2_5, test, unlim rejected) | f09cbabe-393d-4624-8d5b-f6fd4aa78271 | ~65 | pending |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block1 (seedance_2_5, test, unlim rejected -> paid) | f09cbabe-393d-4624-8d5b-f6fd4aa78271 | ~65 | completed |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block2 (seedance_2_5, paid) | 9045b911-d75d-4a1e-8fd6-ef84517a22b7 | ~65 | in_progress |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block3 (seedance_2_5, paid) | cad706d3-7765-455c-9555-4545a74d8773 | ~65 | queued |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block4 (seedance_2_5, paid) | d87b7700-597f-4bc6-9488-c09208afab8d | ~65 | queued |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block5 (seedance_2_5) | n/a | 0 | submission_failed (429, not billed, not retried) |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block6 (seedance_2_5, paid) | fd4643ee-8591-4466-bc79-00ef4fac1448 | ~65 | in_progress |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block7 (seedance_2_5) | n/a | 0 | submission_failed (429, not billed, not retried) |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block8 (seedance_2_5, paid) | d597e818-0980-4b49-bd56-9fa0a0a9343b | ~65 | in_progress |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block9 (seedance_2_5, paid) | 1c3bcda8-be4a-4bac-b7fd-c97f202a5d3d | ~65 | queued |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block10 (seedance_2_5, paid) | d93072c2-0737-4de4-bf34-bfa8cd2556a8 | ~65 | in_progress |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block11 (seedance_2_5, paid) | 2a7536bf-5b19-4494-8cc6-c62dbe825219 | ~65 | queued |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | clip block12 (seedance_2_5, paid) | 70a9f085-fa6e-4515-9e2f-34a60dc5e7e2 | ~65 | queued |
+| 2026-08-31 | 001-body-language-signals-nobody-notices | RUN STOPPED by coordinator — blocks 13-18 not started, assembly not started | n/a | 0 | stopped |
 | 2026-08-31 | 001-body-language-signals-nobody-notices | voice block1 | 27991f92-71c3-41c5-b370-526c656ff761 | ~0.15 | completed |
 | 2026-08-31 | 001-body-language-signals-nobody-notices | voice block2 | 6f98faa9-c18d-467d-b62c-ad3b623061a7 | ~0.15 | completed |
 | 2026-08-31 | 001-body-language-signals-nobody-notices | voice block3 v1 (superseded) | 9342e333-d259-49af-aa1c-fa6229d5275f | ~0.15 | completed |
