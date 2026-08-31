@@ -1,0 +1,12 @@
+# Channel profile
+- niche: Money & Psychology (human behavior lane — closest fit to the reference channel, Bright Side: psychology tests, body language, personality signs, self-improvement)
+- language: English (default — largest RPM pool; no second language requested)
+- style_preset: 2D Illustrator (preset id: pending first render)
+- preset_media_id: (pending first render)
+- style_key_job_id: (pending first render)   # 16:9 — derived at first render, then attached to every clip
+- voice: warm, curious, upbeat narrator read (brighter/quicker than a documentary voice — matched to the reference channel's tone, not the default History/Science preset) (pending first render)
+- aspect: 16:9 · character: faceless · subtitles: off
+- length_policy: auto
+- delegated_at_setup: style, voice, length, shorts settings — skill decides, user overrides anytime
+- created: 2026-08-31
+- reference_channel: Bright Side (@BRIGHTSIDEOFFICIAL) — 44M+ subs, 11B+ views, ~3 uploads/day, flat 2D animation, faceless narrator, numbered curiosity-gap lists (psychology, body language, personality tests, life hacks, space/science, riddles)
